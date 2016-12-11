@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="hibernatebean.Patient" table="PATIENT">
+<id column="FIRSTNAME" name="firstName" type="string" />
+<property column="LASTNAME" name="lastName" type="string" />
+<property column="DOB" name="dob" type="string" />
+<property column="GENDER" name="gender" type="string" />
+<property column="PHONE" name="phoneNumber" type="string" />
+<property column="TEXTINFO" name="freeTextInfo" type="string" />
+</class>
+</hibernate-mapping>

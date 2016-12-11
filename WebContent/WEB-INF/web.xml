@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>DataphiLabs</display-name>
+  <servlet>
+        <display-name>Patient</display-name>
+        <servlet-name>Patient</servlet-name>
+        <servlet-class>hibernatecontroller.PatientControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>PatientDetails</display-name>
+        <servlet-name>PatientDetails</servlet-name>
+        <servlet-class>hibernatecontroller.GetPatientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>PatientSearch</display-name>
+        <servlet-name>PatientSearch</servlet-name>
+        <servlet-class>hibernatecontroller.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Patient</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientDetails</servlet-name>
+        <url-pattern>/patientdetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientSearch</servlet-name>
+        <url-pattern>/Search</url-pattern>
+    </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>register.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
