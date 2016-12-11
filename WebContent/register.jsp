@@ -50,8 +50,6 @@
                 <td>First Name :</td>
                 <td><input type="text" name="firstName" size="30" id="firstName"/></td>
             </tr>
-            <%@page import="java.sql.DriverManager"%>
-	
             <tr>
                 <td>Last Name :</td>
                 <td><input type="text" name="lastName" size="30" id="lastName"/></td>
